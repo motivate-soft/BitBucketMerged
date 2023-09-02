@@ -15,7 +15,7 @@ const SignedOutView = props => {
 
   return (
     <div className={styles.container} style={{ maxWidth: Math.max(340, ui.contentWidth * 0.66) }}>
-     <img style={{margin: "auto", display: "block", maxWidth: "100%"}} src="/assets/sb-dc-logo.png"></img>
+      <Logo className={styles.logo}/>
 
       {isCreating &&
         <Create onToggle={toggleCreate}/>
@@ -28,7 +28,6 @@ const SignedOutView = props => {
       {isFirstRun &&
         <FirstRun/>
       }
-      <Logo className={styles.logo}/>
     </div>
   )
 }
